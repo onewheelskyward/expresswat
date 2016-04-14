@@ -23,12 +23,12 @@ app.get('/', function (req, res) {
 
                 // "text": "Optional text that appears within the attachment",
 
-                "fields": [
-                    {
-                        "title": "Priority",
-                        "value": "High",
-                        "short": false
-                    }
+                // "fields": [
+                //     {
+                //         "title": "Priority",
+                //         "value": "High",
+                //         "short": false
+                //     }
                 ],
 
 
