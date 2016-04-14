@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
                 //         "value": "High",
                 //         "short": false
                 //     }
-                ],
+                // ],
 
 
                 "image_url": "https://media.giphy.com/media/r75ImMRYtSpYQ/giphy.gif",
