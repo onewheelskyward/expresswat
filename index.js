@@ -42,6 +42,10 @@ app.get('/', function (req, res) {
     res.send(response);
 });
 
+app.post('/wat', function(req, res) {
+    res.send('thing');
+});
+
 app.listen(3355, function () {
     console.log('Listenin\' @3355');
 });
