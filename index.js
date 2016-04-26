@@ -1,5 +1,10 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+}));
 
 app.get('/', function (req, res) {
     console.log(res);
@@ -43,7 +48,13 @@ app.get('/', function (req, res) {
 });
 
 app.post('/wat', function(req, res) {
-    res.send('thing');
+    console.log(req.body);
+    res.send({
+	"color": "green",
+	"message": "ALPHA: test",
+	"notify": false,
+	"message_format": "text"
+    });
 });
 
 app.listen(3355, function () {
